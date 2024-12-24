@@ -1,0 +1,91 @@
+html,body{
+  height:100%;
+}
+.antext{
+  font-size: 120px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 100;
+  font-style: normal;
+  opacity: 0; /* Начальная прозрачность */
+  transition: opacity 2s ease-in; /* Плавный переход */
+}
+.antext.visible {
+  opacity: 1; /* Полная видимость */
+}
+h2{
+  margin: 0;
+  padding: 0;
+}
+.text {
+  font-size: 90px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column
+
+}
+.bg-body {
+  background-color: rgb(44, 44, 44);
+}
+.bg_heart {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+ }
+
+.heart {
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -m-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+ }
+
+.heart:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+@keyframes love {
+  0%{top:110%}
+}
